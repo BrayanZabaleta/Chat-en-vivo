@@ -1,24 +1,46 @@
-<!-- src/main/resources/static/index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Chat Reactivo</title>
+    <title>Chat Reactivo 💬</title>
     <style>
         body {
-          background: linear-gradient(135deg, #4CAF50, #2E7D32);
-          color: white;
-          font-family: Arial, sans-serif;
+          background: linear-gradient(135deg, #007bff, #00c6ff);
+          font-family: 'Segoe UI', sans-serif;
+          color: #fff;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+          margin: 0;
           text-align: center;
-          margin-top: 20%;
         }
         h1 {
-          font-size: 2em;
+          font-size: 3em;
+          margin-bottom: 0.3em;
+          animation: fadeIn 2s ease-in-out;
+        }
+        p {
+          font-size: 1.3em;
+          opacity: 0.8;
+          animation: fadeIn 3s ease-in-out;
+        }
+        footer {
+          position: absolute;
+          bottom: 10px;
+          font-size: 0.9em;
+          opacity: 0.6;
+        }
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(-20px); }
+          to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
 <body>
-<h1>💬 Bienvenido a Chat Reactivo</h1>
-<p>El backend está funcionando correctamente en Render 🚀</p>
+<h1>💬 Bienvenido al Chat Reactivo</h1>
+<p>Tu backend está corriendo correctamente en Render 🚀</p>
+<footer>Desarrollado por Brayan Zabaleta 💻</footer>
 </body>
 </html>
