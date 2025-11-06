@@ -1,7 +1,7 @@
 services:
   - type: web
     name: chat-reactivo
-    env: java
+    runtime: java
     buildCommand: ./mvnw clean package -DskipTests
     startCommand: java -jar target/chat-reactivo-0.0.1-SNAPSHOT.jar
     envVars:
@@ -13,3 +13,5 @@ services:
         value: VTbS2BYorogHDdljFcPLYKCpG3C6lSIT
       - key: SPRING_PROFILES_ACTIVE
         value: prod
+      - key: JAVA_VERSION
+        value: 17
