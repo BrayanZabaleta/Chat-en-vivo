@@ -8,6 +8,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api/usuarios")
@@ -47,6 +48,11 @@ public class UsuarioController {
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public Mono<Void> eliminar(@PathVariable Long id) {
         return usuarioService.eliminar(id);
+    }
+    @GetMapping("/")
+    public Mono<Map<String, String>> healthCheck() {
+        // Devuelve el estado de la API, respondiendo al request GET /
+        return Mono.just(Map.of("status", "API OK"));
     }
 
 }
