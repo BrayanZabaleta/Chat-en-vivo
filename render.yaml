@@ -2,7 +2,14 @@ services:
   - type: web
     name: chat-reactivo
     env: java
-    runtime: java
-    plan: free
-    buildCommand: "./mvnw clean install -DskipTests"
-    startCommand: "java -jar target/chat-reactivo-0.0.1-SNAPSHOT.jar"
+    buildCommand: ./mvnw clean package -DskipTests
+    startCommand: java -jar target/chat-reactivo-0.0.1-SNAPSHOT.jar
+    envVars:
+      - key: SPRING_R2DBC_URL
+        value: r2dbc:postgresql://dpg-d45vnabe5dus73cee29g-a/chat_reactivo_xk5d
+      - key: SPRING_R2DBC_USERNAME
+        value: chat_reactivo_xk5d_user
+      - key: SPRING_R2DBC_PASSWORD
+        value: VTbS2BYorogHDdljFcPLYKCpG3C6lSIT
+      - key: SPRING_PROFILES_ACTIVE
+        value: prod
