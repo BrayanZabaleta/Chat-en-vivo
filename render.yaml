@@ -1,9 +1,12 @@
 services:
   - type: web
     name: chat-reactivo
-    runtime: java
+    env: docker
+    plan: free
     buildCommand: ./mvnw clean package -DskipTests
     startCommand: java -jar target/chat-reactivo-0.0.1-SNAPSHOT.jar
+    docker:
+      image: openjdk:17-jdk-slim
     envVars:
       - key: SPRING_R2DBC_URL
         value: r2dbc:postgresql://dpg-d45vnabe5dus73cee29g-a/chat_reactivo_xk5d
@@ -13,5 +16,3 @@ services:
         value: VTbS2BYorogHDdljFcPLYKCpG3C6lSIT
       - key: SPRING_PROFILES_ACTIVE
         value: prod
-      - key: JAVA_VERSION
-        value: 17
