@@ -2,17 +2,17 @@ spring:
   application:
     name: chat-reactivo
   r2dbc:
-    url: ${DATABASE_URL:r2dbc:postgresql://localhost:5432/chat_reactivo}
-    username: ${DB_USERNAME:postgres}
-    password: ${DB_PASSWORD:postgres}
+    url: r2dbc:postgresql://localhost:5432/chat_reactivo
+    username: postgres
+    password: Zabaleta_181914
   sql:
     init:
-      mode: never
+      mode: always
 
 logging:
   level:
-    io.r2dbc.postgresql.QUERY: INFO
-    io.r2dbc.postgresql.PARAM: INFO
+    io.r2dbc.postgresql.QUERY: DEBUG
+    io.r2dbc.postgresql.PARAM: DEBUG
 
 server:
-  port: ${PORT:8080}
+  port: 8080
