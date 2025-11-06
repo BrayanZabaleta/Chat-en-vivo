@@ -4,4 +4,4 @@ services:
     env: java
     plan: free
     buildCommand: "./mvnw clean install -DskipTests"
-    startCommand: "java -jar target/chat-reactivo-0.0.1-SNAPSHOT.jar.original"
+    startCommand: "java -jar target/chat-reactivo-0.0.1-SNAPSHOT.jar"
