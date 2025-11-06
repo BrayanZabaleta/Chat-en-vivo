@@ -1,12 +1,12 @@
-spring:
-  datasource:
-    url: ${DATABASE_URL}
-  jpa:
-    hibernate:
-      ddl-auto: update
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
-  sql:
-    init:
-      mode: always
+# Puerto dinámico para Render
+server.port=${PORT:8080}
+  
+  # Datos de conexión (Render te los da en la sección "Connections" → "External Database URL")
+spring.datasource.url=${DATABASE_URL}
+spring.datasource.username=${DATABASE_USERNAME}
+spring.datasource.password=${DATABASE_PASSWORD}
+  
+  # Configuración de JPA / Hibernate
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
