@@ -49,4 +49,10 @@ public class ChatController {
     public Mono<Mensaje> marcarLeido(@PathVariable Long id, @PathVariable Long lectorId) {
         return mensajeService.marcarComoLeido(id, lectorId);
     }
+
+    @GetMapping
+    public Mono<String> test() {
+        return Mono.just("API de chat funcionando correctamente ✅");
+    }
+
 }
