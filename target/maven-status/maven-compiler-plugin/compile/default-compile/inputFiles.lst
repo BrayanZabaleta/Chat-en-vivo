@@ -1,6 +1,8 @@
 C:\Users\braya\OneDrive\Desktop\chat reactivo\src\main\java\com\example\chatreactivo\ChatReactivoApplication.java
+C:\Users\braya\OneDrive\Desktop\chat reactivo\src\main\java\com\example\chatreactivo\config\CorsConfig.java
 C:\Users\braya\OneDrive\Desktop\chat reactivo\src\main\java\com\example\chatreactivo\config\DatabaseConfig.java
 C:\Users\braya\OneDrive\Desktop\chat reactivo\src\main\java\com\example\chatreactivo\controller\ChatController.java
+C:\Users\braya\OneDrive\Desktop\chat reactivo\src\main\java\com\example\chatreactivo\controller\HealthController.java
 C:\Users\braya\OneDrive\Desktop\chat reactivo\src\main\java\com\example\chatreactivo\controller\SalaController.java
 C:\Users\braya\OneDrive\Desktop\chat reactivo\src\main\java\com\example\chatreactivo\controller\UsuarioController.java
 C:\Users\braya\OneDrive\Desktop\chat reactivo\src\main\java\com\example\chatreactivo\dto\MensajeDTO.java

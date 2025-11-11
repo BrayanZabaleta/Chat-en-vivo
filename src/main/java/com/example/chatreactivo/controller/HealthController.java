@@ -8,7 +8,6 @@ import java.util.Map;
 @RestController
 public class HealthController {
 
-    // Mapea la ruta raíz ( / )
     @GetMapping("/")
     public Mono<Map<String, String>> healthCheck() {
         return Mono.just(Map.of(

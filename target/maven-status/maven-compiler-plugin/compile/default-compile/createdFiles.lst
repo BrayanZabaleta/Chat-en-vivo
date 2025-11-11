@@ -11,6 +11,8 @@ com\example\chatreactivo\entity\Mensaje.class
 com\example\chatreactivo\entity\Sala.class
 com\example\chatreactivo\controller\UsuarioController.class
 com\example\chatreactivo\service\UsuarioService.class
+com\example\chatreactivo\config\CorsConfig.class
 com\example\chatreactivo\service\SalaService.class
 com\example\chatreactivo\dto\MensajeDTO.class
+com\example\chatreactivo\controller\HealthController.class
 com\example\chatreactivo\repository\MensajeRepository.class
